@@ -10,14 +10,16 @@ class SignupPage extends StatelessWidget {
     required Icon suffixIcon,
     TextInputType keyboardType = TextInputType.text,
   }) {
-    return TextField(
-      keyboardType: keyboardType,
-      decoration: InputDecoration(
-        label: Text(label),
-        suffixIcon: suffixIcon,
-        border: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(7),
+    return SingleChildScrollView(
+      child: TextField(
+        keyboardType: keyboardType,
+        decoration: InputDecoration(
+          label: Text(label),
+          suffixIcon: suffixIcon,
+          border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(7),
+            ),
           ),
         ),
       ),
